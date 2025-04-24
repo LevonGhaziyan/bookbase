@@ -1,0 +1,117 @@
+
+📚 Project: BookBase – Online Library App
+Date: 2025-04-24
+
+---
+
+## 🎯 Purpose
+Build a full-stack online library application where users can manage their personal book collection, track reading progress, and view statistics.
+
+---
+
+## 🔧 Tech Stack
+- **Backend**: Django (preferred) or Flask
+- **Database**: SQLite (dev) → PostgreSQL (prod)
+- **Frontend**: Django templates with Bootstrap or Tailwind CSS
+- **Authentication**: Django Auth system
+- **Charts**: Chart.js or Plotly
+- **Media Storage**: Local (dev), Cloudinary or S3 (prod)
+- **Deployment**: Render, Railway, or Heroku
+
+---
+
+## 📦 Core Features
+
+### 1. User Authentication
+- Register, login, logout
+- Password reset via email
+- User profile management
+
+### 2. Book Management
+- CRUD: Add/edit/delete books
+- Fields: title, author, genre, rating, cover image, review/notes
+- Upload book cover images
+
+### 3. Library Organization
+- Mark as “Read”, “Currently Reading”, or “Wishlist”
+- Filter books by status, genre, rating
+- Full-text search for title/author
+
+### 4. Dashboard & Statistics
+- Books read per month
+- Genre distribution (pie chart)
+- Top-rated books
+- Total books read
+
+---
+
+## ✨ Advanced Features
+
+### 5. Borrowing System
+- Borrowed books with return date
+- Overdue reminder via email
+- Borrowing history
+
+### 6. Reading Planner
+- Set finish-by date
+- Calculate reading schedule (pages/day)
+- Daily checklist
+
+### 7. API Integration
+- Use OpenLibrary API to fetch book info from ISBN
+
+### 8. Custom Tags and Shelves
+- Tag books (custom or predefined)
+- Create custom shelves (e.g., “Favorites”, “To Re-read”)
+
+### 9. Notes and Quotes
+- Markdown-supported personal notes
+- Favorite quotes per book
+- Export notes as PDF
+
+### 10. Public Reviews and Comments
+- Post short public reviews
+- Like/comment on shared reviews
+- Option to make reviews private or public
+
+### 11. Notifications
+- Reminder emails for reading goals or overdue books
+- Weekly digest of new books added
+
+### 12. Export & Import
+- Export full library to CSV or JSON
+- Import from external sources (CSV)
+
+---
+
+## 🧪 Testing
+- Unit tests for models, views, and forms
+- Integration tests for user flows
+
+---
+
+## 🐳 DevOps
+- Docker + Docker Compose setup
+- Environment-specific settings (dev/prod)
+- CI/CD pipeline (GitHub Actions)
+
+---
+
+## 📂 Project Structure (Django)
+bookbase/
+├── users/              # Authentication, profiles
+├── books/              # Book logic
+├── dashboard/          # Stats and charts
+├── templates/
+├── static/
+├── media/
+└── manage.py
+
+---
+
+## 📌 Deliverables
+- Complete source code on GitHub
+- Live demo (deployed)
+- README with setup instructions
+- Screenshots or demo video
+
