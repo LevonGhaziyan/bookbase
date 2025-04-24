@@ -1,0 +1,70 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{% static 'library/css/style.css' %}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <div class="nav">
+            <div class="logo">
+                <img src="{% static 'library/img/logo.png' %}" alt="">
+                <p>BookBase</p>
+            </div>
+            <div class="nav_pages">
+                <div class="nav_pages_container">
+                    <div class="nav_page nav_page_selected">
+                        <img src="{% static 'library/img/icons/home_selected.svg' %}" alt="">
+                        <p>Discover</p>
+                    </div>
+                    <div class="nav_page">
+                        <img src="{% static 'library/img/icons/category.svg' %}" alt="">
+                        <p>Category</p>
+                    </div>
+                    <div class="nav_page">
+                        <img src="{% static 'library/img/icons/favorites.svg' %}" alt="">
+                        <p>Favorites</p>
+                    </div>
+                    <hr>
+                    <div class="nav_page">
+                        <img src="{% static 'library/img/icons/settings.svg' %}" alt="">
+                        <p>Settings</p>
+                    </div>
+                    <div class="nav_page">
+                        <img src="{% static 'library/img/icons/home.svg' %}" alt="">
+                        <p>Logout</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="body">
+            <header>
+                <label for="search">
+                    <div class="header_search">
+                        <img class="header_search_icon" src="{% static 'library/img/icons/search.svg' %}" alt="">
+                        <form action="" method="post">
+                            <input id="search" class="header_search_input" type="text" name="search">
+                        </form>
+                    </div>
+                </label>
+                <div class="header_profile">
+                    <img src="{% static 'library/img/icons/profile.svg' %}" alt="">
+                    <p>LG</p>
+                </div>
+            </header>
+            <main></main>
+        </div>
+    </div>
+
+</body>
+
+</html>
